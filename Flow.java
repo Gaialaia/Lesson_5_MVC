@@ -3,7 +3,7 @@
 // до 26 февр., 15:00 +05:00 UTC
 
 
-package Lesson_3;
+package Lesson_3_4;
 
 import java.util.Iterator;
 import java.util.List;

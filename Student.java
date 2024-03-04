@@ -1,23 +1,30 @@
-package Lesson_3;
+package Lesson_3_4;
 
-public class Student implements Comparable<Student> {
+import java.util.Iterator;
+
+public class Student extends User implements Comparable<Student> {
     
-    public Integer studentID;
-    public String firstname;
-    public String secondname;
-    public String lastname;
+    private Integer studentID;
+    // public String firstname;
+    // public String secondname;
+    // public String lastname;
 
     public Student(Integer studentID, String firstname, String secondname, String lastname) {
+        super(firstname, secondname, lastname);
         this.studentID = studentID;
-        this.firstname = firstname;
-        this.secondname = secondname;
-        this.lastname = lastname;
     }
+
+    public Student getStudentFromStudentGroup (String firstname, String secondname, String lastname) {
+        Iterator<Student> iterator = StudentGroupIterator();
+    }
+
+
+    
 
     @Override
     public String toString() {
-        return "Student [studentID=" + studentID + ", firstname=" + firstname + ", secondname=" + secondname
-                + ", lastname=" + lastname + "]";
+        return "Student [studentID=" + studentID + ", firstname=" + super.getFirstname() + ", secondname=" + super.getLastname()
+                + ", lastname=" + super.getSecondname() + "]";
     }
 
     @Override
@@ -31,6 +38,20 @@ public class Student implements Comparable<Student> {
         return studentID.compareTo(o.studentID);
         
         
+    }
+
+
+
+
+    public Integer getStudentID() {
+        return studentID;
+    }
+
+
+
+
+    public void setStudentID(Integer studentID) {
+        this.studentID = studentID;
     }
 
     

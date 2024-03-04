@@ -1,4 +1,4 @@
-package Lesson_3;
+package Lesson_3_4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +30,22 @@ public class Main {
         studentGroup2.add(student6);
 
 
+        Teacher teacher1 = new Teacher("Katherine", "Vladimirovna", "Popova", 632547);
+        Teacher teacher2 = new Teacher("Pavel", "Alekseyevich", "Ryzhkov", 987321);
+        Teacher teacher3 = new Teacher("Josh", "Juan", "Cavallo", 852465);
+
+        List<Teacher> teacherList = new ArrayList<>();
+
+        teacherList.add(teacher3);
+
+
+        for (Teacher teacher : teacherList) {
+            System.out.println(teacherList);
+        }
+
+        teacher1.getTeacherID();
+
+
 
 
 
@@ -38,7 +54,7 @@ public class Main {
 
         // StudentGroupIterator iterator = new StudentGroupIterator(studentGroup1);
         // while (iterator.hasNext()) {
-        //     Student student = iterator.next();
+        //     Student student = iterator.next(
         //     if(student.studentID == 23)  
         //     iterator.remove();
         //     else
@@ -70,16 +86,14 @@ public class Main {
     }
 
 
-    Flow flow1 = new Flow(studentGroup1List);
-    System.out.println("flow :" + flow1);
+    // Flow flow1 = new Flow(studentGroup1List);  finish
+    // System.out.println("flow :" + flow1);
 
-    FlowGroupIterator flowGroupIterator1 = new FlowGroupIterator(studentGroup1List);
+    // FlowGroupIterator flowGroupIterator1 = new FlowGroupIterator(studentGroup1List);
 
-
-    
-
-
-
+    StudentGroupService service2 = new StudentGroupService(studentGroup1);
+    UserView view = new StudentView();
+    view.sendOnConsole(service.getSortedStudentGroupbyName());
 
     }
 
