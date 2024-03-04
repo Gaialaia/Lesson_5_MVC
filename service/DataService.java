@@ -17,9 +17,9 @@ public class DataService {
    public void create(String firstName, String secondName, String lastName, UserType type) {
     int ID;
     if(type == UserType.STUDENT) 
-        users.add(new Student());
+        users.add(new Student(null, firstName, secondName, lastName));
     else if (type == UserType.TEACHER) {
-        users.add(new Teacher());
+        users.add(new Teacher(firstName, secondName, lastName, null));
     }
 
    }
