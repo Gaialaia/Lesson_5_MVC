@@ -6,7 +6,7 @@ import Lesson_3_4.User;
 
 public interface IUsersView <T extends User>{ //Liskov Substitution , User могут быть Teacher, 
     
-    //Student;(Dependency Inversion Principle
+    //Student;(Dependency Inversion Principle, ссылается на class User, используется Student & Teacher
     
     public void printOnConsole (T user);
 
