@@ -11,7 +11,7 @@ import Lesson_3_4.model.UserType;
 import Lesson_3_4.model.Student;
 
 public class DataService {  //Open-Closed 
-    //Data service управляет и объединяет сущности User
+    //Data service управляет и объединяет сущности User, Liskov Substitution: User может быть Teacher и Student
     
     List<User> users = new ArrayList<>();
 
