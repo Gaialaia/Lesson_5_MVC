@@ -1,6 +1,6 @@
 package Lesson_3_4.model;
 
-public class Teacher extends User{ //class Student, Teacher - Single Responsibility,  Interface Segregation 
+public class Teacher extends User{ //class Student, Teacher - Single Responsibility 
     
     private int teacherID;
 
