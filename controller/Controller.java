@@ -31,18 +31,18 @@ public class Controller {
 //  путём вызова метода из сервиса;
 
 
-    StudentGroupService studentGroupService = new StudentGroupService();
+  
 
     public void getStudentListWithTeacher(Teacher teacher, List<Student> students) {
        
 
     }
 
-      public void  createStudentListWithTeacher(Teacher teacher, List<Student> students){
-        studentGroupService.createStudentGroup(teacher, students);
-        studentView.printOnConsoleArray(studentGroupService.getStudentGroup());
+    //   public void  createStudentListWithTeacher(Teacher teacher, List<Student> students){
+    //     studentGroupService.createStudentGroup(teacher, students);
+    //     studentView.printOnConsoleArray(studentGroupService.getStudentGroup());
     }
 
    
     
-}
+

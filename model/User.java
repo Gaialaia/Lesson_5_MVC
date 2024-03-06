@@ -1,6 +1,6 @@
 package Lesson_3_4.model;
 
-public abstract class User {
+public abstract class User {  //Open-Closed, разделяется на Student & Teacher
     
     private String firstName;
 

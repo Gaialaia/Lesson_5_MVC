@@ -1,6 +1,6 @@
 package Lesson_3_4.model;
 
-public class Student extends User {
+public class Student extends User {  //class Student, Teacher - Single Responsibility, Liskov Substitution 
 
     private int studentID;
 

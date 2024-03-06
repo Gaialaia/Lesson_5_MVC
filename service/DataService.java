@@ -8,18 +8,19 @@ import java.util.List;
 
 import Lesson_3_4.Teacher;
 import Lesson_3_4.model.UserType;
-import Lesson_3_4.Student;
+import Lesson_3_4.model.Student;
 
-public class DataService {
+public class DataService {  //Open-Closed 
+    //Data service управляет и объединяет сущности User
     
     List<User> users = new ArrayList<>();
 
    public void create(String firstName, String secondName, String lastName, UserType type) {
-    int ID;
+    int ID = getFreeId(type);
     if(type == UserType.STUDENT) 
-        users.add(new Student(null, firstName, secondName, lastName));
+        users.add(new Student(firstName, secondName, lastName, ID)); //?? ()??
     else if (type == UserType.TEACHER) {
-        users.add(new Teacher(firstName, secondName, lastName, null));
+        users.add(new Teacher(firstName, secondName, lastName, ID));
     }
 
    }

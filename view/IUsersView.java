@@ -4,7 +4,7 @@ import java.util.List;
 
 import Lesson_3_4.User;
 
-public interface IUsersView <T extends User>{
+public interface IUsersView <T extends User>{ //Liskov Substitution , User могут быть Teacher, Student
     
     public void printOnConsole (T user);
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import Lesson_3_4.Student;
 
-public class StudentView implements IUsersView<Student>{
+public class StudentView implements IUsersView<Student>{  //Single Responsibility 
 
     @Override
     public void printOnConsole(Student user) {

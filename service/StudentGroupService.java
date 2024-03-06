@@ -15,7 +15,7 @@ import Lesson_3_4.StudentGroup;
 import Lesson_3_4.Teacher;
 import Lesson_3_4.model.UserType;
 
-public class StudentGroupService extends DataService {
+public class StudentGroupService extends DataService {  //Open-Closed 
 
     StudentGroup studentGroup;
 
